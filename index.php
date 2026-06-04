@@ -318,6 +318,28 @@ if (isset($_GET['ajax'])) {
     .chart-card--wide { grid-column: auto; }
     .chart-frame-wrap { height: 200px; }
   }
+  .btn-video {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  background: var(--surface);
+  border: 1px solid var(--border2);
+  border-radius: 8px;
+  color: var(--text);
+  text-decoration: none;
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all .2s;
+}
+.btn-video:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  transform: translateY(-1px);
+}
 </style>
 </head>
 <body>
@@ -326,6 +348,7 @@ if (isset($_GET['ajax'])) {
   <div class="logo">INFOCASTELLUM</div>
   <div class="status-dot"><div class="dot"></div><span>EN VIVO</span></div>
   <div class="header-time" id="clock">--:--:--</div>
+  <a href="video.php" class="btn-video">▶ Ver video</a>
 </header>
 
 <!-- Banner instalación PWA (Android lo muestra automáticamente) -->
