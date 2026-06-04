@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sin conexión — Sensor.IO</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: #0a0b0e;
+    color: #e2e6f0;
+    font-family: 'DM Mono', monospace, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+    padding: 24px;
+  }
+  .icon { font-size: 64px; opacity: .6; }
+  .title { font-size: 22px; font-weight: 700; color: #e2e6f0; }
+  .sub   { font-size: 13px; color: #5a6478; line-height: 1.6; max-width: 280px; }
+  .dot   { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: #e84040; margin-right: 8px; }
+  .btn {
+    margin-top: 8px;
+    padding: 12px 28px;
+    background: #3ddc84;
+    color: #000;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .btn:active { opacity: .8; }
+</style>
+</head>
+<body>
+  <div class="icon">📡</div>
+  <div class="title"><span class="dot"></span>Sin conexión</div>
+  <div class="sub">
+    No hay conexión a internet.<br>
+    Verifica tu red e intenta de nuevo.
+  </div>
+  <button class="btn" onclick="location.reload()">Reintentar</button>
+</body>
+</html>
