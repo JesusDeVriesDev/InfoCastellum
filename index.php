@@ -323,7 +323,7 @@ if (isset($_GET['ajax'])) {
 <body>
 
 <header>
-  <div class="logo">SENSOR<span>.</span>IO</div>
+  <div class="logo">INFOCASTELLUM</div>
   <div class="status-dot"><div class="dot"></div><span>EN VIVO</span></div>
   <div class="header-time" id="clock">--:--:--</div>
 </header>
@@ -333,7 +333,7 @@ if (isset($_GET['ajax'])) {
   <div class="install-left">
     <img src="icons/icon-72x72.png" alt="icon">
     <div>
-      <div class="install-title">Instalar Sensor.IO</div>
+      <div class="install-title">Instalar InfoCastellum</div>
       <div class="install-sub">Agregar a pantalla de inicio</div>
     </div>
   </div>
