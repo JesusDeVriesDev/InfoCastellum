@@ -348,7 +348,6 @@ if (isset($_GET['ajax'])) {
   <div class="logo">INFOCASTELLUM</div>
   <div class="status-dot"><div class="dot"></div><span>EN VIVO</span></div>
   <div class="header-time" id="clock">--:--:--</div>
-  <a href="video.php" class="btn-video">▶ Ver video</a>
 </header>
 
 <!-- Banner instalación PWA (Android lo muestra automáticamente) -->
@@ -377,6 +376,7 @@ if (isset($_GET['ajax'])) {
 <div id="error-banner" style="display:none" class="error-banner"></div>
 
 <!-- Tarjetas de sensores -->
+<a href="video.php" class="btn-video">▶ Ver video</a>
 <div>
   <div class="section-label">Lecturas actuales</div>
   <div class="sensor-grid" id="sensor-grid">
